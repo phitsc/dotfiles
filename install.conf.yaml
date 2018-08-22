@@ -3,8 +3,14 @@
 - shell:
     - mkdir -p ~/.config
 
+- defaults:
+    link:
+        create: true
+
 - link:
     ~/.bashrc: bashrc
     ~/.i3blocks.conf: i3blocks.conf
     ~/.vimrc: vimrc
+    ~/.config/i3/config: config/i3/config
+    ~/.config/vifm/vifmrc: config/vifm/vifmrc
 

@@ -1,0 +1,21 @@
+set timefmt=%d.%m.%Y\ %H:%M
+set statusline=" Hint: %z%=%A %10u:%-7g %15s %20d "
+
+colorscheme semidarkdesert
+
+set wildmenu
+set wildstyle=popup
+
+set ignorecase
+set smartcase
+set incsearch
+
+set scrolloff=4
+
+" Yank current directory path into the clipboard
+nnoremap yd :!echo %d | xclip %i<cr>
+
+" Yank current file path into the clipboard
+nnoremap yf :!echo %c:p | xclip %i<cr>
+
+filextype *.pdf zathura %c %i &, xpdf %c
