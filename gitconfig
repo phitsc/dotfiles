@@ -1,0 +1,14 @@
+[alias]
+	st = status -s
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[user]
+	useConfigOnly = true
+[core]
+[diff]
+	tool = bc3
+[difftool]
+	prompt = false
+[difftool "bc3"]
+	trustExitCode = true
+[commit]
+	verbose = true
