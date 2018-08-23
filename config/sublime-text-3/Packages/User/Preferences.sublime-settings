@@ -1,0 +1,41 @@
+{
+	"dictionary": "Packages/Language - English/en_GB.dic",
+	"draw_centered": true,
+	"draw_white_space": "selection",
+	"enable_live_count": true,
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "Hack",
+	"font_options":
+	[
+		"directwrite"
+	],
+	"font_size": 10.5,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"EasyClangComplete",
+		"Markdown",
+		"Vintage"
+	],
+	"match_brackets": false,
+	"match_brackets_angle": false,
+	"match_brackets_braces": false,
+	"match_brackets_content": false,
+	"match_brackets_square": false,
+	"match_tags": false,
+	"predawn_findreplace_small": true,
+	"predawn_quick_panel_small": true,
+	"predawn_sidebar_arrows": true,
+	"predawn_sidebar_narrow": true,
+	"predawn_sidebar_small": true,
+	"predawn_tabs_active_underline": true,
+	"predawn_tabs_small": true,
+	"rulers":
+	[
+		120
+	],
+	"show_encoding": true,
+	"show_line_endings": true,
+	"theme": "predawn-DEV.sublime-theme",
+	"translate_tabs_to_spaces": true
+}
