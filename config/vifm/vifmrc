@@ -18,4 +18,7 @@ nnoremap yd :!echo %d | xclip %i<cr>
 " Yank current file path into the clipboard
 nnoremap yf :!echo %c:p | xclip %i<cr>
 
+" Toggle quick view
+nnoremap w :view<cr>
+
 filextype *.pdf zathura %c %i &, xpdf %c
