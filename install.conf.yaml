@@ -11,6 +11,7 @@
     ~/.bashrc: bashrc
     ~/.gitconfig: gitconfig
     ~/.i3blocks.conf: i3blocks.conf
+    ~/.inputrc: inputrc
     ~/.vimrc: vimrc
     ~/.config/i3/config: config/i3/config
     ~/.config/vifm/vifmrc: config/vifm/vifmrc
