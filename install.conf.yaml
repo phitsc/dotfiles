@@ -14,6 +14,7 @@
     ~/.inputrc: inputrc
     ~/.vimrc: vimrc
     ~/.config/i3/config: config/i3/config
+    ~/.config/i3/i3status.conf: config/i3/i3status.conf
     ~/.config/vifm/vifmrc: config/vifm/vifmrc
     ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings: config/sublime-text-3/Packages/User/Preferences.sublime-settings
 
