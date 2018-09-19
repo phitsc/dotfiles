@@ -99,26 +99,26 @@ bindsym $mod+space focus mode_toggle
 #bindsym $mod+d focus child
 
 # switch to workspace
-bindsym $mod+q workspace 1
-bindsym $mod+a workspace 2
-bindsym $mod+y workspace 3
-#bindsym $mod+4 workspace 4
+bindsym $mod+1 workspace "1: one "
+bindsym $mod+q workspace "2: two "
+bindsym $mod+a workspace "3: three "
+bindsym $mod+y workspace "4: four "
 
-bindsym $mod+w workspace 6
-bindsym $mod+s workspace 7
-bindsym $mod+x workspace 8
-#bindsym $mod+9 workspace 9
+bindsym $mod+2 workspace "6: six "
+bindsym $mod+w workspace "7: seven "
+bindsym $mod+s workspace "8: eight "
+bindsym $mod+x workspace "9: nine "
 
 # move focused container to workspace
-bindsym $mod+Shift+q move container to workspace 1
-bindsym $mod+Shift+a move container to workspace 2
-bindsym $mod+Shift+y move container to workspace 3
-#bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+q move container to workspace 2
+bindsym $mod+Shift+a move container to workspace 3
+bindsym $mod+Shift+y move container to workspace 4
 
-bindsym $mod+Shift+w move container to workspace 6
-bindsym $mod+Shift+s move container to workspace 7
-bindsym $mod+Shift+x move container to workspace 8
-#bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+2 move container to workspace 6
+bindsym $mod+Shift+w move container to workspace 7
+bindsym $mod+Shift+s move container to workspace 8
+bindsym $mod+Shift+x move container to workspace 9
 
 workspace 1 output VNC-0
 workspace 2 output VNC-0
@@ -162,10 +162,8 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-bindsym $mod+1  resize set  0 ppt 90 ppt
-bindsym $mod+2  resize set  0 ppt 80 ppt
-bindsym $mod+3  resize set  0 ppt 70 ppt
-bindsym $mod+4  resize set  0 ppt 60 ppt
+bindsym $mod+3  resize set  0 ppt 90 ppt
+bindsym $mod+4  resize set  0 ppt 70 ppt
 bindsym $mod+5  resize set  0 ppt 50 ppt
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -174,4 +172,5 @@ bar {
         status_command py3status --config ~/.config/i3/i3status.conf
         #status_command i3blocks
 	position top
+        strip_workspace_numbers yes
 }
