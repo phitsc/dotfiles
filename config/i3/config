@@ -14,6 +14,7 @@ set $mod Mod1+Mod4+Control
 focus_follows_mouse no
 hide_edge_borders smart
 workspace_auto_back_and_forth yes
+force_display_urgency_hint 500 ms
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -98,37 +99,49 @@ bindsym $mod+space focus mode_toggle
 # focus the child container
 #bindsym $mod+d focus child
 
-# switch to workspace
-bindsym $mod+1 workspace "1: one "
-bindsym $mod+q workspace "2: two "
-bindsym $mod+a workspace "3: three "
-bindsym $mod+y workspace "4: four "
+## Workspaces
 
-bindsym $mod+2 workspace "6: six "
-bindsym $mod+w workspace "7: seven "
-bindsym $mod+s workspace "8: eight "
-bindsym $mod+x workspace "9: nine "
+set $workspace1 "1: one "
+set $workspace2 "2: two "
+set $workspace3 "3: three "
+set $workspace4 "4: four "
+
+set $workspace6 "6: six "
+set $workspace7 "7: seven "
+set $workspace8 "8: eight "
+set $workspace9 "9: nine "
+
+# switch to workspace
+bindsym $mod+1 workspace $workspace1
+bindsym $mod+q workspace $workspace2
+bindsym $mod+a workspace $workspace3
+bindsym $mod+y workspace $workspace4
+
+bindsym $mod+2 workspace $workspace6
+bindsym $mod+w workspace $workspace7
+bindsym $mod+s workspace $workspace8
+bindsym $mod+x workspace $workspace9
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1
-bindsym $mod+Shift+q move container to workspace 2
-bindsym $mod+Shift+a move container to workspace 3
-bindsym $mod+Shift+y move container to workspace 4
+bindsym $mod+Shift+1 move container to workspace $workspace1
+bindsym $mod+Shift+q move container to workspace $workspace2
+bindsym $mod+Shift+a move container to workspace $workspace3
+bindsym $mod+Shift+y move container to workspace $workspace4
 
-bindsym $mod+Shift+2 move container to workspace 6
-bindsym $mod+Shift+w move container to workspace 7
-bindsym $mod+Shift+s move container to workspace 8
-bindsym $mod+Shift+x move container to workspace 9
+bindsym $mod+Shift+2 move container to workspace $workspace6
+bindsym $mod+Shift+w move container to workspace $workspace7
+bindsym $mod+Shift+s move container to workspace $workspace8
+bindsym $mod+Shift+x move container to workspace $workspace9
 
-workspace 1 output VNC-0
-workspace 2 output VNC-0
-workspace 3 output VNC-0
-workspace 4 output VNC-0
+workspace $workspace1 output VNC-0
+workspace $workspace2 output VNC-0
+workspace $workspace3 output VNC-0
+workspace $workspace4 output VNC-0
 
-workspace 6 output VNC-1
-workspace 7 output VNC-1
-workspace 8 output VNC-1
-workspace 9 output VNC-1
+workspace $workspace6 output VNC-1
+workspace $workspace7 output VNC-1
+workspace $workspace8 output VNC-1
+workspace $workspace9 output VNC-1
 
 # reload the configuration file
 #bindsym $mod+Shift+c reload
