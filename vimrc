@@ -4,6 +4,7 @@ set wildmenu
 set showmatch
 set incsearch
 set hlsearch
+set tabstop=4
 
 " Plugins
 call plug#begin('~/.vim/plugged')

@@ -3,6 +3,9 @@ set statusline=" Hint: %z%=%A %10u:%-7g %15s %20d "
 
 colorscheme semidarkdesert
 
+set syscalls
+set trash
+
 set wildmenu
 set wildstyle=popup
 
@@ -11,12 +14,17 @@ set smartcase
 set incsearch
 
 set scrolloff=4
+set sortnumbers
+set sort=iname
 
 " Yank current directory path into the clipboard
-nnoremap yd :!echo %d | xclip %i<cr>
+nnoremap yd :!echo %d | xclip -selection clipboard %i<cr>
 
 " Yank current file path into the clipboard
-nnoremap yf :!echo %c:p | xclip %i<cr>
+nnoremap yf :!echo %c:p | xclip -selection clipboard %i<cr>
+
+" Yank selected file paths into the clipboard
+nnoremap ys :!echo %f:p | xclip -selection clipboard %i<cr>
 
 " Toggle quick view
 nnoremap w :view<cr>

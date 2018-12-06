@@ -22,8 +22,10 @@ export BASH_IT="$HOME/github/bash-it"
 # Lock and Load a custom theme file
 # location /.bash_it/themes/
 
+export POWERLINE_AWS_PROFILE_CHAR=" "
 export POWERLINE_PROMPT_USER_INFO_MODE="sudo"
 export POWERLINE_LEFT_PROMPT="cwd scm"
+export POWERLINE_RIGHT_PROMPT="last_status aws_profile clock"
 export BASH_IT_THEME='powerline-multiline'
 
 # (Advanced): Change this to the name of your remote repo if you
@@ -59,9 +61,10 @@ export SCM_CHECK=true
 source "$BASH_IT"/bash_it.sh
 
 # hstr
-export HH_CONFIG=hicolor         # get more colors
+export HH_CONFIG=hicolor,rawhistory         # get more colors
 shopt -s histappend              # append new history items to .bash_history
-export HISTCONTROL=ignorespace   # leading space hides commands from history
+export HISTCONTROL=ignorespace:ignoredups:erasedups   # leading space hides commands from history
+export HISTIGNORE="rm *:rm -rf *:cd ..:ls:hh *"
 export HISTFILESIZE=10000        # increase history file size (default is 500)
 export HISTSIZE=${HISTFILESIZE}  # increase history size (default is 500)
 export PROMPT_COMMAND="history -a; history -n; ${PROMPT_COMMAND}"   # mem/file sync
@@ -72,3 +75,8 @@ if [[ $- =~ .*i.* ]]; then bind '"\C-r": "\C-ahh \C-j"'; fi
 # Load Z
 source ~/github/z/z.sh
 
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/.local/bin:$HOME/bin:$HOME/.cargo/bin
+
+export PATH

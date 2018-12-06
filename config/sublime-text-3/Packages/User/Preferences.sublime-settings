@@ -9,11 +9,9 @@
 	[
 		"directwrite"
 	],
-	"font_size": 10.5,
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"EasyClangComplete",
 		"Markdown",
 		"Vintage"
 	],
