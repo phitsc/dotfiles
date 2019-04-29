@@ -9,7 +9,7 @@ if [ -f $HOME/.alias ]; then
 	. $HOME/.alias
 fi
 
-LC_ALL=en_US.UTF-8
+#LC_ALL=en_US.UTF-8
 
 export EDITOR='vim'
 
@@ -80,3 +80,14 @@ source ~/github/z/z.sh
 PATH=$PATH:$HOME/.local/bin:$HOME/bin:$HOME/.cargo/bin
 
 export PATH
+
+function xdev() {
+    if [ -f ".localprofile-rhel7" ]; then
+        bash --rcfile .localprofile-rhel7
+    elif [ -d "${PWD}/eamis" ]; then
+        cd eamis
+        bash --rcfile .localprofile-rhel7
+    else
+        echo "Error: Not in eamis directory?"
+    fi
+}
