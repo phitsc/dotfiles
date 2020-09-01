@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/Guna/themes/Guna.tmTheme",
+	"color_scheme": "Packages/Guna/themes/Guna.sublime-color-scheme",
 	"dictionary": "Packages/Language - English/en_GB.dic",
 	"draw_centered": true,
 	"draw_white_space": "selection",
@@ -19,15 +19,16 @@
 	],
 	"gn_hide_tab_dropdown": true,
 	"gn_overlay_scroll_bars": true,
-	"gn_sb_cnvx": true,
 	"gn_sidebar_box": true,
+	"gn_title_bar": true,
 	"gnwidgx": true,
 	"highlight_line": true,
 	"ignored_packages":
 	[
 		"Markdown",
-		"TrailingSpaces",
-		"Vintage"
+		"Six",
+		"Vintage",
+		"Vintageous"
 	],
 	"match_brackets": false,
 	"match_brackets_angle": false,
@@ -36,6 +37,7 @@
 	"match_brackets_square": false,
 	"match_tags": false,
 	"mini_diff": "auto",
+	"neovintageous_build_version": 11100,
 	"predawn_findreplace_small": true,
 	"predawn_quick_panel_small": true,
 	"predawn_sidebar_arrows": true,
@@ -50,5 +52,7 @@
 	"show_encoding": true,
 	"show_line_endings": true,
 	"theme": "Guna.sublime-theme",
-	"translate_tabs_to_spaces": true
+	"translate_tabs_to_spaces": true,
+	"vintageous_use_ctrl_keys": null,
+	"vintageous_use_super_keys": null
 }

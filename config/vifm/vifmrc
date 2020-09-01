@@ -30,3 +30,7 @@ nnoremap ys :!echo %f:p | xclip -selection clipboard %i<cr>
 nnoremap w :view<cr>
 
 filextype *.pdf zathura %c %i &, xpdf %c
+filextype *.jpg,*.png eog 
+
+fileviewer *.pdf zathura %c %i &, xpdf %c
+fileviewer *.jpg,*.png eog 

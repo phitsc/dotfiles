@@ -15,3 +15,9 @@
 	verbose = true
 [core]
 	excludesfile = /home/tsph/.gitignore
+[merge]
+	tool = bc3
+[mergetool "bc3"]
+	trustExitCode = true
+[log]
+	date = rfc

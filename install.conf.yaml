@@ -9,7 +9,9 @@
 
 - link:
     ~/.bashrc: bashrc
+    ~/.bashitrc: bashitrc
     ~/.gitconfig: gitconfig
+    ~/.hstrrc: hstrrc
     ~/.i3blocks.conf: i3blocks.conf
     ~/.inputrc: inputrc
     ~/.vimrc: vimrc
